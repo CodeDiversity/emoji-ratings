@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Emoji Rating Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Emoji Rating](emoji-rating-screenshot.png)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The Emoji Rating Component is a fun and interactive React component that allows users to rate an item using emojis. It displays a list of emojis representing different ratings, and users can click on an emoji to select their rating. The selected emoji will be visually distinguished from the others, and the corresponding numerical value of the selected rating will be displayed on the screen.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Emoji Rating Component](#emoji-rating-component)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Challenges](#challenges)
+  - [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To use the Emoji Rating Component in your React project, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Install the package using npm or yarn:
 
-### `npm run build`
+## Challenges
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Challenge 1: Define the Emoji Array**
+   - Open the `EmojiRating.js` file.
+   - In the `emojis` array, define emojis with different ratings and their values.
+     Example: `{ emoji: '😍', label: 'Great!', value: 5 }`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Challenge 2: Implement the Emoji Rating Logic**
+   - Inside the `EmojiRating` component, implement the `handleEmojiClick` function.
+   - Update the `selectedRating` state with the clicked emoji's value when an emoji is clicked.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Challenge 3: Display the Emojis**
+   - Use the `map` function to render each emoji along with its label inside a `div` element.
+   - Apply the `emoji` and `label` properties from the `emojis` array in the mapping.
 
-### `npm run eject`
+4. **Challenge 4: Highlight the Selected Emoji**
+   - Conditionally add the "selected" class to the clicked emoji so that it appears visually distinguished from the others.
+   - You can use the `selectedRating` state to achieve this effect.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Challenge 5: Display the Selected Rating Value**
+   - Conditionally display the selected rating value below the emoji container when a rating is selected.
+   - Use the `selectedRating` state to display the numerical value of the selected emoji.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. **Challenge 6: Include the EmojiRating Component**
+   - Open the `App.js` file.
+   - Add the import statement for the `EmojiRating` component at the top of the file.
+   - Inside the `App` component, render the `EmojiRating` component using `<EmojiRating />`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Bonus Challenge (Optional): Customize and Experiment**
+- Feel free to customize the emojis, labels, and values according to your preferences.
+- Add more emojis to make the Emoji Rating component even more fun!
+- Experiment with CSS styles and animations to enhance the user experience.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).

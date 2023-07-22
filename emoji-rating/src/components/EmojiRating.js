@@ -12,27 +12,28 @@ const EmojiRating = () => {
 
   const [selectedRating, setSelectedRating] = useState(null);
 
-  const handleEmojiClick = (id) => {
-    // TODO: Update the selectedRating state with the clicked emoji's value instead of id
-    const selectedEmoji = emojis.find((emoji) => emoji.value === id);
-    setSelectedRating(selectedEmoji ? selectedEmoji.value : null);
+  // TODO: Implement a function to handle emoji clicks and update the selected rating
+  const handleEmojiClick = (value) => {
+    // TODO: Update the selectedRating state with the clicked emoji's value
+    setSelectedRating(value);
   };
 
   return (
     <div>
       <h2>Rate this item:</h2>
       <div className="emoji-container">
+        {/* TODO: Use the map function to render each emoji with its label */}
         {emojis.map(({ emoji, label, value }) => (
           <div
             key={value}
             className={`emoji ${selectedRating === value ? 'selected' : ''}`}
-            onClick={() => handleEmojiClick(value)}
           >
             {emoji}
           </div>
         ))}
       </div>
       {selectedRating !== null && (
+        // TODO: Display the selected rating value below the emoji container
         <p>Selected Rating: {selectedRating}</p>
       )}
     </div>
