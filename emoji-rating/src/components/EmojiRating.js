@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+
+const React = require('react');
+const { useState } = require('react');
 
 const EmojiRating = () => {
   const emojis = [
