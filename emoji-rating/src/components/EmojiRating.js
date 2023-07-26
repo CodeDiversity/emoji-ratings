@@ -1,3 +1,4 @@
+import { on } from 'events';
 import React, { useState } from 'react';
 
 const EmojiRating = () => {
@@ -12,10 +13,8 @@ const EmojiRating = () => {
 
   const [selectedRating, setSelectedRating] = useState(null);
 
-  // TODO: Implement a function to handle emoji clicks and update the selected rating
   const handleEmojiClick = (value) => {
-    // TODO: Update the selectedRating state with the clicked emoji's value
-    setSelectedRating(value);
+    setSelectedRating(value)
   };
 
   return (

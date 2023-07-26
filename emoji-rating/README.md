@@ -49,11 +49,11 @@ To use the Emoji Rating Component in your React project, follow these steps:
    - Add the import statement for the `EmojiRating` component at the top of the file.
    - Inside the `App` component, render the `EmojiRating` component using `<EmojiRating />`.
 
-**Bonus Challenge (Optional): Customize and Experiment**
+7. Bonus Challenge (Optional): Customize and Experiment
+
 - Feel free to customize the emojis, labels, and values according to your preferences.
 - Add more emojis to make the Emoji Rating component even more fun!
 - Experiment with CSS styles and animations to enhance the user experience.
-
 
 ## License
 
