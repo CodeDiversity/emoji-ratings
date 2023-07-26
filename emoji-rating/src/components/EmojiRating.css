@@ -1,22 +1,24 @@
 .emoji-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .emoji {
-    font-size: 30px;
-    margin: 10px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .emoji.selected {
-    transform: scale(1.2);
-  }
-  
-  .label {
-    display: block;
-    font-size: 14px;
-    text-align: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.emoji:hover {
+  transform: scale(1.2);
+}
+
+.emoji.selected {
+  transform: scale(1.2);
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
