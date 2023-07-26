@@ -1,3 +1,4 @@
+import './EmojiRating.css';
 
 const React = require('react');
 const { useState } = require('react');
